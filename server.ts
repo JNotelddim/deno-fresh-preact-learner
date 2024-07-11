@@ -1,5 +1,5 @@
-// import { serve } from "https://deno.land/std/http/server.ts";
+import { serve } from "https://deno.land/std/http/server.ts";
 
-Deno.serve((_request: Request) => {
+serve((_request: Request) => {
   return new Response("Hello, world!");
 });
