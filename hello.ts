@@ -1,3 +1,8 @@
-const site = await fetch("https://www.deno.com");
+import Person, { sayHello } from "./person.ts";
 
-console.log(await site.text());
+const ada: Person = {
+    lastName: "Lovelace",
+    firstName: "Ada",
+};
+
+console.log(sayHello(ada));
