@@ -1,5 +1,8 @@
 import { FreshContext } from "$fresh/server.ts";
 
+// This is note a page route, but an API route.
+// How do I fetch a joke from `index.tsx`?
+
 // Jokes courtesy of https://punsandoneliners.com/randomness/programmer-jokes/
 const JOKES = [
   "Why do Java developers often wear glasses? They can't C#.",
