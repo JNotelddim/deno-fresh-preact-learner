@@ -1,15 +1,3 @@
-interface Person {
-    firstName: string;
-    lastName: string;
-}
+const site = await fetch("https://www.deno.com");
 
-function sayHello(p: Person): string {
-    return `Hello, ${p.firstName}!`;
-}
-
-const ada: Person = {
-    firstName: "Ada",
-    lastName: "Lovelace",
-};
-
-console.log(sayHello(ada));
+console.log(await site.text());
